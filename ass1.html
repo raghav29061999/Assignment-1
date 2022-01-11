@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+    assignment 1
+    </title>
+  </head>
+  <style>
+    
+    nav.goodvibes {
+      background-color: rgb(0, 0, 0);
+      display: block;          
+      text-align: left;
+      padding: 14px 16px;
+      text-decoration: white;
+      font-size: 17px;
+    }
+    .topnav a,a:hover{
+      background-color: #333;
+      float: right;
+      text-align: left;
+      overflow: hidden;
+    }
+          
+    /* Style the links inside the navigation bar */
+    .topnav a {
+      float: right;        
+    }
+          
+    /* Change the color of links on hover */
+    .goodvibes a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+          
+    /* Add an active class to highlight the current page */
+    .goodvibes a.active, a:hover {
+      background-color: #04AA6D;
+      color: white;
+    }
+      
+    h1{
+      text-align: center;
+    }
+    div.User{
+      text-align: center;
+    }
+    
+    .master-div-style {
+      margin: auto;
+      width: 800px;
+      background-color: #f3f3f3;
+      border-radius: 10px;
+      padding: 20px 10px 10px 10px;
+    }
+  </style>
+        
+  <body>
+          
+    <nav class="goodvibes">
+      <a  href="#home">Good Vibes Form</a><br>
+      <a href = "#Laurence">Laurence &emsp;</a>
+      <a href="#follow" class = "active">+Follow</a>
+      <nav class="topnav">
+        <a href="#Login">    LogIn &emsp;   </a>
+        <a href="#SignIN">      SignIN &emsp;    </a>
+        <a href="#Editor">  View in Editor &emsp;  </a>
+        <a href="#Like">  Like&emsp;  </a>
+      </nav>
+    </nav>
+
+    <div class="master-div-style">
+      <h1 class="title">Tell us something positive happened to you today .</h1>
+      <div class ="form rows">
+        <div class = "labels">
+          <label for = "name" id ="name label">Name</label>
+        </div>
+        <div class = "fields">
+          <input type = "text" id = "name" placeholder="Enter Your name" class ="Input-fields">
+        </div>
+      </div>
+      <div class ="form rows">
+        <div class = "labels">
+          <label for = "mail" id ="mail label">Email</label>
+        </div>
+        <div class = "fields">
+          <input type = "text" id = "mail" placeholder="Enter Your mail id" class ="Input-fields">
+        </div>
+      </div>
+      <div class ="form rows">
+        <div class = "labels">
+          <label for = "goodnumber" id ="Scale">On a scale of 1-10, how good was it?</label>
+        </div>
+        <div class = "fields">
+          <input type = "number" id = "goodnumber" placeholder="Enter a number between 1 to 10" class ="Input-fields" min ="1" max ="10">
+        </div>
+      </div>
+      <div class ="form rows">
+        <div class = "labels">
+          <label for = "dropdown" id ="Scale">Where did it happened</label>
+        </div>
+        <div class = "fields"> 
+          <select name="Location of even" id = "dropdown" class= "dropdown" placeholder="Enter place"> 
+            <option value ="home">At home</option>
+            <option value = "Work">At Work</option>
+            <option value ="Commute">At Commute</option>
+            <option value = "street">On Street</option>
+            <option value = "other"> Other</option>
+          </select>
+        </div>
+      </div>
+      <div class ="form rows">
+        <div class = "labels">
+          <label for = "radiotime" id ="time">At what time of day did it happen?</label>
+        </div>
+        <div class = "fields">
+          <input type = "radio" id = "radiotimeMorning" name = "radiotime" value="Morning">
+            <label for="radiotimeMorning">Morning</label><br>
+          <input type = "radio" id = "radiotimeAfternoon" name = "radiotime" value="Afternoon">
+            <label for="radiotimeAfternoon">Afternoon</label><br>
+          <input type = "radio" id = "radiotimeEvening" name = "radiotime" value="Evening">
+            <label for="radiotimeEvening">Evening</label><br>
+        </div>
+      </div>
+      <div class ="form rows">
+        <div class = "labels">
+          <label for = "Experiance" id ="emotions">What emotions did you experience?(Select all that apply)</label>
+        </div>
+        <div class = "fields">
+          <input type = "checkbox" id = "exExcited" name = "Experiance" value="Excited">
+            <label for="radiotimeMorning">Excited</label><br>
+          <input type = "checkbox" id = "exHumbled" name = "Experiance" value="Humbled">
+            <label for="radiotimeAfternoon">Humbled</label><br>
+          <input type = "checkbox" id = "exElated" name = "Experiance" value="Elated">
+            <label for="radiotimeEvening">Elated</label><br>
+          <input type = "checkbox" id = "exLoved" name = "Experiance" value="Loved">
+            <label for="radiotimeAfternoon">Loved</label><br>
+          <input type = "checkbox" id = "exEnthusiastic" name = "Experiance" value="Enthusiastic">
+            <label for="radiotimeEvening">Enthusiastic</label><br>
+          </div>
+      </div>
+      <div class ="form rows">
+        <div class = "labels">
+          <label for = "Comments" id ="Comments">What emotions did you experience?(Select all that apply)</label>
+        </div>
+    </div>
+  </body>
+</html>
